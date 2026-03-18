@@ -47,12 +47,7 @@ This app uses multiple encryption methods to secure your text. The date and time
 
 ### 🧠 Logic Behind the Algorithms
 
-#### Custom Method: RAV-ESO
-Unlike standard libraries, I developed **RAV-ESO** to provide a multi-layered masking effect. The process involves:
-1. Converting text to **ASCII values**.
-2. Translating values into **Roman Numerals**.
-3. Mapping Roman characters into an **esoteric symbol set** (`][}+)(&`).
-4. Reversing the final string for added complexity.
+#### Custom Methods
 
 #### The Vigenère Implementation
 This method uses a keyword to shift letters. My implementation ensures:
