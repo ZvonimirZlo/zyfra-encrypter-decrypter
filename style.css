@@ -8,15 +8,56 @@
     --footerColor: #4894ce;
 }
 
+/* html {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+ html {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Matrix rain canvas background */
+#Matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none; /* Allows clicks to pass through the canvas to elements underneath */
+}
+
+
 body {
-    color: white;
-    background: url(Images/milad-fakurian-1RWMfvv2UW4-unsplashweb.webp) center no-repeat fixed;
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
@@ -26,6 +67,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
+
+
 
 .content {
     display: flex;
@@ -451,7 +494,7 @@ img {
 
     textarea {
         width: 95vw;
-        height: 25vh;
+        height: 22vh;
     }
 
     #encrypter-select,
