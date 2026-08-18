@@ -24,10 +24,14 @@ This app uses multiple encryption methods to secure your text. The date and time
 
 
 ## Screenshots
-   <p>
-   <img src='' width="400">
-   </p>
-  
+<img alt="Screenshot1" src="https://github.com/user-attachments/assets/5034ffe2-1b62-4671-adad-4a22d08f660c" />
+
+
+<img alt="Screenshot2" src="https://github.com/user-attachments/assets/867f9826-db5a-4297-a892-3588f9aae746" />
+
+
+<img width="400" alt="Screenshot Mob" src="https://github.com/user-attachments/assets/52137e01-1be7-4e21-a076-20b4bcab1ce7" />
+ 
 ## How It Works
 
 ### How to Use This App:
@@ -38,7 +42,17 @@ This app uses multiple encryption methods to secure your text. The date and time
 5. **Copy & Save:** Use the **Copy** button to save to your clipboard.
 6. **Decrypt:** Paste the ciphertext, select the matching method, and click **DECRYPT**.
 
+### Live Demo: [Zyfr@](https://zifr.netlify.app/)
 ---
+
+### 🧠 Logic Behind the Algorithms
+
+#### Custom Methods
+
+#### The Vigenère Implementation
+This method uses a keyword to shift letters. My implementation ensures:
+- **Case preservation:** Uppercase letters stay uppercase.
+- **Symbol skipping:** Spaces and punctuation are not encrypted, keeping the message structure intact.
 
    Some enryption methods require a key for encoding and the same key for decoding text. 
    For example the Vigenère cipher is a method of encrypting alphabetic text where each letter of the plaintext is encoded with a different Caesar cipher, 
@@ -99,6 +113,7 @@ function rot13encrypter(str) {
     return str.replace(/[a-zA-Z0-9]/g, handleEncryption);
 };
 ```
+
 
 ## Technologies
    - `HTML5`
