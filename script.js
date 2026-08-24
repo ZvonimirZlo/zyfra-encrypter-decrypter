@@ -270,6 +270,28 @@ decryptButton.onclick = handleDecryption;
 
 decryptSelect.onclick = changeInputValue;
 
+// Function to toggle input visibility based on select value
+const updateInputVisibility = () => {
+    if (encryptSelect.value === 'Vigenere' || encryptSelect.value === '*') {
+        inputOne.style.display = 'block';
+    } else {
+        inputOne.style.display = 'none';
+    }
+
+    if (decryptSelect.value === 'Vigenere' || decryptSelect.value === '*') {
+        inputTwo.style.display = 'block';
+    } else {
+        inputTwo.style.display = 'none';
+    }
+};
+
+// Run once on load to set correct initial state
+updateInputVisibility();
+
+// Listen for actual changes on the dropdowns instead of mousemove
+encryptSelect.addEventListener('change', updateInputVisibility);
+decryptSelect.addEventListener('change', updateInputVisibility);
+
 
 // ==================
 // ----**CIPHERS**---
