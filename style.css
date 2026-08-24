@@ -8,36 +8,20 @@
     --footerColor: #4894ce;
 }
 
-/* html {
+html {
     background: black;
     height: 100%;
     overflow: hidden;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
- html {
-    background: black;
-    height: 100%;
-    overflow: hidden;
-}
-
-body {
+/* body {
     margin: 0;
     padding: 0;
     height: 100%;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-}
+} */
 
 * {
     margin: 0;
@@ -53,7 +37,8 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    pointer-events: none; /* Allows clicks to pass through the canvas to elements underneath */
+    pointer-events: none;
+    /* Allows clicks to pass through the canvas to elements underneath */
 }
 
 
@@ -78,6 +63,8 @@ body {
     height: 85vh;
     padding: 0;
     margin: auto;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .logo {
@@ -93,7 +80,9 @@ body {
     background-clip: text;
     animation-delay: 1s;
     letter-spacing: 7px;
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
 }
+
 
 .zifra {
     font-family: "Tilt Prism", sans-serif;
@@ -411,21 +400,37 @@ input:checked+.slider:after {
     display: inline-flex;
 }
 
-.footer {
+/* .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--footerColor);
-    font-size: 12px;
+    color: #0F0;
+    background-color: #000000;
+    font-size: 15px;
     bottom: 0;
     position: relative;
     width: 100%;
     height: 2.5rem;
     position: absolute;
+} */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0F0;
+    background-color: #000000;
+    font-size: 15px;
+    width: 100%;
+    height: 2.5rem;
+    position: relative;
+    /* Remove the duplicate absolute positioning */
+    margin-top: auto;
+    /* Pushes footer to the bottom if flex column has space */
 }
 
 .svg {
-    color: var(--footerColor);
+    color: #0F0;
     margin: 2px;
 }
 
@@ -468,8 +473,40 @@ img {
 
 
 
-
 @media (width <=1000px) {
+
+    #descBtn,
+    #descBtnMob1,
+    #descBtnMob2 {
+        height: 38px;
+        width: 120px;
+    }
+
+    #descBtn span,
+    #descBtnMob1 span,
+    #descBtnMob2 span {
+        height: 30px;
+        width: 112px;
+        font-size: 14px;
+    }
+
+    /* Scale down Encrypt/Decrypt action buttons */
+    .enc,
+    .dec {
+        width: 7.5em;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    select {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    html {
+        overflow: auto;
+    }
+
     body {
         overflow: visible;
     }
@@ -543,6 +580,10 @@ img {
 }
 
 @media (min-width: 1001px) and (max-width: 1600px) {
+    html {
+        overflow: auto;
+    }
+
     textarea {
         width: 47dvw;
         height: 25dvh;
