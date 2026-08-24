@@ -48,6 +48,7 @@ This app uses multiple encryption methods to secure your text. The date and time
 ### 🧠 Logic Behind the Algorithms
 
 #### Custom Methods
+RAV Series (Custom Ciphers): I designed custom encoding algorithms (RAV-ESO, RAV-N, RAV-S) that convert text characters into Unicode/Roman numeral mappings, reverse the string, and inject custom symbols to obscure the payload.
 
 #### The Vigenère Implementation
 This method uses a keyword to shift letters. My implementation ensures:
