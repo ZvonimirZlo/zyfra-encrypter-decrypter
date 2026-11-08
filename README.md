@@ -24,13 +24,11 @@ This app uses multiple encryption methods to secure your text. The date and time
 
 
 ## Screenshots
-<img alt="Screenshot1" src="https://github.com/user-attachments/assets/5034ffe2-1b62-4671-adad-4a22d08f660c" />
+<img alt="Screenshot1" width="1915" height="949" alt="Screenshot Zyfr@" src="https://github.com/user-attachments/assets/0faf5532-e8d7-44b5-b87f-d0e542506dda" />
 
 
-<img alt="Screenshot2" src="https://github.com/user-attachments/assets/867f9826-db5a-4297-a892-3588f9aae746" />
+<img width="496" height="917" alt="Screenshot mobile" src="https://github.com/user-attachments/assets/03149353-f246-4fa1-b82e-8f41fdc025b6" />
 
-
-<img width="400" alt="Screenshot Mob" src="https://github.com/user-attachments/assets/52137e01-1be7-4e21-a076-20b4bcab1ce7" />
  
 ## How It Works
 
