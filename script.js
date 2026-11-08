@@ -28,6 +28,7 @@ const deleteTextFromDecrypted = document.getElementById('delete_text_from_decryp
 const canvas = document.getElementById('Matrix');
 const context = canvas.getContext('2d');
 
+//Matrix rain background
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const eso = '()[]+!';
@@ -69,6 +70,8 @@ window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+
 //**ENCRYPTION TEXTAREA TEXT HANDLERS
 
 //Paste text in encryption text box handler
